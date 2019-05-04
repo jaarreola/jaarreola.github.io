@@ -1,0 +1,51 @@
+.jap_Card {
+  background-color: aliceblue;
+  padding: 24px;
+}
+
+.jap_Card-overView-name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.jap_Card-overView-name,
+.jap_Card-overView-job {
+  display: block;
+}
+
+.jap_Card-overView-job a {
+  color: blue;
+}
+
+.jap_Card-overView-aboutMe {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.jap_Card-location,
+.jap_Card-contactMe,
+.jap_Card-contactMe-item {
+  display: inline-block;
+}
+
+.jap_Card-contactMe {
+  float: right;
+}
+
+.jap_Card-contactMe-item {
+  font-size: 30px;
+  margin: 0 4px;
+  transition: color 0.5s ease;
+}
+
+.jap_Card-contactMe-item:hover {
+  color: #525760;
+}
+
+.jap_Card-contactMe-item:first-child {
+  margin-left: 0;
+}
+
+.jap_Card-contactMe-item:last-child {
+  margin-right: 0;
+}
