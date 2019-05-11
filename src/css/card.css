@@ -1,6 +1,41 @@
 .jap_Card {
   background-color: aliceblue;
-  padding: 24px;
+  padding: 248px 24px 24px;
+  position: relative;
+}
+
+/* esto es un pseudo-elemeto en css */
+.jap_Card::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  background-image: url('https://ezavile.github.io/cover.4f999449.jpg');
+  background-image: url('https://avatars0.githubusercontent.com/u/34073845?s=400&u=407bbf7bd47f65bb240865342d14c823d8ca8ab0&v=4');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 224px;
+}
+
+.jap_Card-image {
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  background-image: url('https://ezavile.github.io/cover.4f999449.jpg');
+  background-image: url('https://avatars0.githubusercontent.com/u/34073845?s=400&u=407bbf7bd47f65bb240865342d14c823d8ca8ab0&v=4');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 224px;
+
+}
+.jap_Card-overView {
+  margin-bottom: 8px;
 }
 
 .jap_Card-overView-name {
@@ -22,17 +57,8 @@
   margin-bottom: 20px;
 }
 
-.jap_Card-location,
-.jap_Card-contactMe,
 .jap_Card-contactMe-item {
   display: inline-block;
-}
-
-.jap_Card-contactMe {
-  float: right;
-}
-
-.jap_Card-contactMe-item {
   font-size: 30px;
   margin: 0 4px;
   transition: color 0.5s ease;
