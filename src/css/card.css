@@ -1,6 +1,6 @@
 .jap_Card {
   background-color: aliceblue;
-  padding: 324px 24px 24px;
+  padding: 20em 1.5em 1.5em;   /*16px - 1em    324px 24px 24px*/
   position: relative;
 }
 
@@ -17,30 +17,16 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 300px;
+  height: 19em;
 }
 
-.jap_Card-image {
-  position: absolute;
-  background-color: rgba(0,0,0,0.2);
-  background-image: url('https://ezavile.github.io/cover.4f999449.jpg');
-  background-image: url('https://avatars0.githubusercontent.com/u/34073845?s=400&u=407bbf7bd47f65bb240865342d14c823d8ca8ab0&v=4');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 224px;
-
-}
 .jap_Card-overView {
-  margin-bottom: 8px;
+  margin-bottom: 0.5em;
 }
 
 .jap_Card-overView-name {
-  font-size: 24px;
-  margin-bottom: 5px;
+  font-size: 1.5 rem; /* 24px; */
+  margin-bottom: 0.333em /*0.3125 rem; */ /*15px; */
 }
 
 .jap_Card-overView-name,
@@ -53,14 +39,14 @@
 }
 
 .jap_Card-overView-aboutMe {
-  margin-top: 8px;
-  margin-bottom: 20px;
+  /* margin-top: 8px; */
+  margin-bottom: 1.25em /*20px;*/
 }
 
 .jap_Card-contactMe-item {
   display: inline-block;
-  font-size: 30px;
-  margin: 0 4px;
+  font-size: 2rem;
+  margin: 0 0.25em;
   transition: color 0.5s ease;
 }
 
@@ -76,7 +62,7 @@
   margin-right: 0;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36em) {
   body {
     display: flex;
     align-items: center;
@@ -86,7 +72,7 @@
 
   .jap_Card {
     width: 80%;
-    box-shadow: 9px -5px 29px -10px rgba(0,0,0,0.75);
+    box-shadow: 0.3em 0.3em 4em -3em rgba(0,0,0,0.75);
   }
 
   .jap_Card-contact {
@@ -96,28 +82,28 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .jap_Card {
-    padding-top: 24px;
-    padding-left: 344px;
+    padding-top: 1.5em;
+    padding-left: 20.5em;
   }
   .jap_Card::before {
     height: 100%;
-    width: 320px;
+    width: 20em;
     background-image: url('');
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62em) {
   .jap_Card {
-    max-width: 800px;
-    padding-left: 368px;
+    max-width: 50em;
+    padding-left: 23em;
   }
 
   .jap_Card::before {
-    left: 24px;
-    top: -24px;
-    bottom: -24px;
+    left: 1.5em;
+    top: -1.5em;
+    bottom: -1.5em;
     height: auto;
   }
 }
