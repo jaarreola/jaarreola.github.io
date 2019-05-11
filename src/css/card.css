@@ -1,6 +1,6 @@
 .jap_Card {
   background-color: aliceblue;
-  padding: 248px 24px 24px;
+  padding: 324px 24px 24px;
   position: relative;
 }
 
@@ -10,14 +10,14 @@
   position: absolute;
   background-color: rgba(0,0,0,0.2);
   background-image: url('https://ezavile.github.io/cover.4f999449.jpg');
-  background-image: url('https://avatars0.githubusercontent.com/u/34073845?s=400&u=407bbf7bd47f65bb240865342d14c823d8ca8ab0&v=4');
+  /* background-image: url('https://avatars0.githubusercontent.com/u/34073845?s=400&u=407bbf7bd47f65bb240865342d14c823d8ca8ab0&v=4'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   top: 0;
   left: 0;
   right: 0;
-  height: 224px;
+  height: 300px;
 }
 
 .jap_Card-image {
@@ -74,4 +74,50 @@
 
 .jap_Card-contactMe-item:last-child {
   margin-right: 0;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .jap_Card {
+    width: 80%;
+    box-shadow: 9px -5px 29px -10px rgba(0,0,0,0.75);
+  }
+
+  .jap_Card-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jap_Card {
+    padding-top: 24px;
+    padding-left: 344px;
+  }
+  .jap_Card::before {
+    height: 100%;
+    width: 320px;
+    background-image: url('');
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .jap_Card {
+    max-width: 800px;
+    padding-left: 368px;
+  }
+
+  .jap_Card::before {
+    left: 24px;
+    top: -24px;
+    bottom: -24px;
+    height: auto;
+  }
 }
