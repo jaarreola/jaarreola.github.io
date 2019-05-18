@@ -9,8 +9,7 @@
   content: "";
   position: absolute;
   background-color: rgba(0,0,0,0.2);
-  background-image: url('https://ezavile.github.io/cover.4f999449.jpg');
-  /* background-image: url('https://avatars0.githubusercontent.com/u/34073845?s=400&u=407bbf7bd47f65bb240865342d14c823d8ca8ab0&v=4'); */
+  background-image: url('./../images/cover.jpg'); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -90,7 +89,7 @@
   .jap_Card::before {
     height: 100%;
     width: 20em;
-    background-image: url('');
+    background-image: url('./../images/profile.jpg');
   }
 }
 
