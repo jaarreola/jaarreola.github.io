@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
-  background-color: #3370bc;
+  background-color: aliceblue;
   font-family: 'Poppins', 'Segoe UI';
-  font-size: 14px;
+  font-size: 1rem;
   line-height: normal;
 }
 
@@ -22,4 +26,11 @@ a {
 
 strong {
   font-weight: bold;
+}
+
+/* extra small < 576px (by default)*/
+@media screen and (min-width: 576px) {
+  body {
+    background-color: #3370bc;
+  }
 }
