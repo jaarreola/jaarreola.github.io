@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: aliceblue;
+  font-family: 'Poppins', 'Segoe UI';
+  font-size: 1rem;
+  line-height: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3370bc;
+  font-family: 'Baloo Thambi', cursive;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* extra small < 576px (by default)*/
+@media screen and (min-width: 576px) {
+  body {
+    background-color: #3370bc;
+  }
+}

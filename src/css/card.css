@@ -1,0 +1,108 @@
+.jap_Card {
+  background-color: aliceblue;
+  padding: 20em 1.5em 1.5em;   /*16px - 1em    324px 24px 24px*/
+  position: relative;
+}
+
+/* esto es un pseudo-elemeto en css */
+.jap_Card::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  background-image: url('./../images/cover.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 19em;
+}
+
+.jap_Card-overView {
+  margin-bottom: 0.5em;
+}
+
+.jap_Card-overView-name {
+  font-size: 1.5 rem; /* 24px; */
+  margin-bottom: 0.333em /*0.3125 rem; */ /*15px; */
+}
+
+.jap_Card-overView-name,
+.jap_Card-overView-job {
+  display: block;
+}
+
+.jap_Card-overView-job a {
+  color: #3370bc;
+}
+
+.jap_Card-overView-aboutMe {
+  /* margin-top: 8px; */
+  margin-bottom: 1.25em /*20px;*/
+}
+
+.jap_Card-contactMe-item {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 0.25em;
+  transition: color 0.5s ease;
+}
+
+.jap_Card-contactMe-item:hover {
+  color: #525760;
+}
+
+.jap_Card-contactMe-item:first-child {
+  margin-left: 0;
+}
+
+.jap_Card-contactMe-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 36em) {
+  body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .jap_Card {
+    width: 80%;
+    box-shadow: 0.3em 0.3em 4em -3em rgba(0,0,0,0.75);
+  }
+
+  .jap_Card-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .jap_Card {
+    padding-top: 1.5em;
+    padding-left: 20.5em;
+  }
+  .jap_Card::before {
+    height: 100%;
+    width: 20em;
+    background-image: url('./../images/profile.jpg');
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .jap_Card {
+    max-width: 50em;
+    padding-left: 23em;
+  }
+
+  .jap_Card::before {
+    left: 1.5em;
+    top: -1.5em;
+    bottom: -1.5em;
+    height: auto;
+  }
+}
